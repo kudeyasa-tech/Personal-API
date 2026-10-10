@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal API — Your Tools, Connected</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">Personal<span>API</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#demo">Live Demo</a>
+        <a href="#endpoint">Endpoint</a>
+        <a href="#contact" class="btn btn-small">Get Started</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Connect your own tools.<br /><em>Privacy&nbsp;secured.</em></h1>
+      <p class="subtitle">
+        Personal API is a private gateway between you and your tools —
+        one simple FastAPI backend, yours to control.
+      </p>
+      <div class="hero-actions">
+        <a href="#demo" class="btn btn-primary">Try the Live Demo</a>
+        <a href="#features" class="btn btn-ghost">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Why Personal API?</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">&#128274;</div>
+          <h3>Private by Design</h3>
+          <p>Your data stays on your machine. No third parties, no tracking — just your tools talking to you.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9889;</div>
+          <h3>Fast &amp; Lightweight</h3>
+          <p>Built on FastAPI, it responds in milliseconds and connects any frontend to your backend instantly.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128279;</div>
+          <h3>One Endpoint, Every Tool</h3>
+          <p>A single clean REST interface lets you wire up notes, tasks, scripts, or anything else you run.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Live Demo ===== -->
+  <section class="demo" id="demo">
+    <div class="container">
+      <h2>Live Demo</h2>
+      <p class="demo-note">
+        This page talks to the FastAPI backend (<code>website.py</code>).
+        Start it with <code>uvicorn website:app --reload</code> — or just type a name below
+        to see the request that would be sent.
+      </p>
+      <div class="demo-box card">
+        <label for="nameInput">Your name</label>
+        <div class="demo-row">
+          <input type="text" id="nameInput" placeholder="e.g. Tim" />
+          <button class="btn btn-primary" id="pingBtn">Ping the API</button>
+        </div>
+        <pre id="apiResult" class="api-result">Response will appear here…</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Endpoint Preview ===== -->
+  <section class="endpoint" id="endpoint">
+    <div class="container">
+      <h2>The API at a Glance</h2>
+      <div class="code-window card">
+        <div class="code-bar"><span></span><span></span><span></span> GET /</div>
+        <pre><code>{
+  "message": "Hello, World!"
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Personal API — privacy secured, yours to run.</p>
+      <a href="#top" class="btn btn-ghost btn-small">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
